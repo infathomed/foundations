@@ -1,0 +1,10 @@
+# Nmap 7.98 scan initiated Thu Jan 15 19:18:05 2026 as: nmap -sT -p 1-1024 -oA nmap/outputs/router-enum 192.168.4.1
+Nmap scan report for 192.168.4.1
+Host is up (0.0032s latency).
+Not shown: 1022 closed tcp ports (conn-refused)
+PORT   STATE SERVICE
+53/tcp open  domain
+80/tcp open  http
+MAC Address: 9C:57:BC:81:26:92 (eero)
+
+# Nmap done at Thu Jan 15 19:18:45 2026 -- 1 IP address (1 host up) scanned in 40.71 seconds

@@ -1,0 +1,2 @@
+# Nmap 7.98 scan initiated Wed Jan 14 23:44:34 2026 as: nmap -sn -oA nmap/outputs/home-discovery 192.168.1.0/24
+# Nmap done at Wed Jan 14 23:48:02 2026 -- 256 IP addresses (0 hosts up) scanned in 208.54 seconds

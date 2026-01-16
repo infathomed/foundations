@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Thu Jan 15 19:18:05 2026 as: nmap -sT -p 1-1024 -oA nmap/outputs/router-enum 192.168.4.1 -->
+<nmaprun scanner="nmap" args="nmap -sT -p 1-1024 -oA nmap/outputs/router-enum 192.168.4.1" start="1768533485" startstr="Thu Jan 15 19:18:05 2026" version="7.98" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1024" services="1-1024"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.4.1" addrtype="ipv4"/>
+<address addr="9C:57:BC:81:26:92" addrtype="mac" vendor="eero"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1768533485" endtime="1768533525"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.4.1" addrtype="ipv4"/>
+<address addr="9C:57:BC:81:26:92" addrtype="mac" vendor="eero"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="1022">
+<extrareasons reason="conn-refused" count="1022" proto="tcp" ports="1-52,54-79,81-1024"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+</ports>
+<times srtt="3184" rttvar="1035" to="100000"/>
+</host>
+<runstats><finished time="1768533525" timestr="Thu Jan 15 19:18:45 2026" summary="Nmap done at Thu Jan 15 19:18:45 2026; 1 IP address (1 host up) scanned in 40.71 seconds" elapsed="40.71" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

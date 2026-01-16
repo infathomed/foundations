@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///C:/Program Files (x86)/Nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.98 scan initiated Wed Jan 14 23:44:34 2026 as: nmap -sn -oA nmap/outputs/home-discovery 192.168.1.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sn -oA nmap/outputs/home-discovery 192.168.1.0/24" start="1768463074" startstr="Wed Jan 14 23:44:34 2026" version="7.98" xmloutputversion="1.05">
+<verbose level="0"/>
+<debugging level="0"/>
+<runstats><finished time="1768463282" timestr="Wed Jan 14 23:48:02 2026" summary="Nmap done at Wed Jan 14 23:48:02 2026; 256 IP addresses (0 hosts up) scanned in 208.54 seconds" elapsed="208.54" exit="success"/><hosts up="0" down="256" total="256"/>
+</runstats>
+</nmaprun>
