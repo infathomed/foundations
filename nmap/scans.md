@@ -146,3 +146,39 @@ nmap -sV --script default,safe 192.168.1.10 -oA outputs/05-nse-safe
 ## Router firewall policies
 
 ## This is a positive security control that reduces lateral movement risk.
+
+## Router Port Enumeration — 2026-01-15
+
+**Target**
+- IP Address: 192.168.4.1
+- Asset Type: Network gateway / router
+- Vendor Identified via MAC OUI: eero
+
+**Command**
+
+nmap -sT -p 1-1024 192.168.4.1 -oA nmap/outputs/router-enum
+Results
+
+## Host is reachable with low latency
+
+## 1022 TCP ports closed (connection refused)
+
+## Open ports:
+
+## 53/tcp (DNS)
+
+## 80/tcp (HTTP)
+
+## Interpretation
+The router exposes a minimal and expected attack surface:
+
+## Port 53 indicates local DNS services
+
+## Port 80 indicates a web-based management interface
+
+## All other well-known ports are closed, indicating an enforced default-deny posture
+
+## MAC address vendor identification confirms the device as an eero router, validating asset classification as network infrastructure rather than an endpoint.
+
+## This configuration reduces lateral movement opportunities and limits exposure to common service-based attacks.
+
