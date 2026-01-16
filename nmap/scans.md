@@ -127,3 +127,22 @@ nmap -sV --script default,safe 192.168.1.10 -oA outputs/05-nse-safe
 
 ### Only scan systems you own or have explicit permission to test.
 ### Document scope, date/time, and purpose of each scan when saving outputs
+## Home Network Discovery - 2026-01-14
+**Command** nmap -sn 192.168.1.0/24 -oA nmap/outputs/home-discovery
+## Result
+
+## 256 IP addresses scanned
+
+## 0 hosts responded
+
+## Interpretation
+## This indicates that host-to-host discovery is blocked on the local network.
+## Likely causes include:
+
+## Wireless client isolation
+
+## Guest VLAN
+
+## Router firewall policies
+
+## This is a positive security control that reduces lateral movement risk.
