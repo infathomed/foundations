@@ -181,4 +181,35 @@ The router exposes a minimal and expected attack surface:
 ## MAC address vendor identification confirms the device as an eero router, validating asset classification as network infrastructure rather than an endpoint.
 
 ## This configuration reduces lateral movement opportunities and limits exposure to common service-based attacks.
+---
 
+## Scan 2 – Router Port Enumeration
+
+**Target**
+- IP Address: 192.168.4.1
+- Asset Type: Network gateway / router
+
+**Command**
+
+nmap -sT -p 1-1024 192.168.4.1 -oA nmap/outputs/router-enum
+
+## Results
+
+## Host reachable with low latency
+
+## 1022 TCP ports closed (connection refused)
+
+## Open ports identified:
+
+## 53/tcp (DNS)
+
+## 80/tcp (HTTP)
+
+## Device Identification
+
+## MAC address OUI resolved to vendor: eero
+
+## Indicates the device is network infrastructure rather than an endpoint
+
+## Security Interpretation
+## The router exposes a minimal and expected attack surface. DNS and HTTP services are typical for local name resolution and administrative access. The absence of additional open well-known ports suggests a default-deny firewall posture, which reduces exposure to common service-based attacks and limits lateral movement opportunities.
